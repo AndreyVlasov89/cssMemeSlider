@@ -13,43 +13,36 @@
 <body>
    <div class="wrapper">
       <div class="slider">
-         <input type="radio" name="radio_btn" id="radio_1" checked>
-         <input type="radio" name="radio_btn" id="radio_2">
-         <input type="radio" name="radio_btn" id="radio_3">
-         <input type="radio" name="radio_btn" id="radio_4">
-         <div class="slides">
-            <div class="slide first"><img src="./img/dude.jpg" alt="dude"></div>
-            <div class="slide second"><img src="./img/not-blinde.jpg" alt="blind"></div>
-            <div class="slide third"><img src="./img/robot.jpg" alt="robot"></div>
-            <div class="slide fourth"><img src="./img/roses.jpg" alt="roses"></div>
-         </div>
+         <div class="slider__body">
+            <input type="radio" name="radio_btn" id="radio_1" checked>
+            <input type="radio" name="radio_btn" id="radio_2">
+            <input type="radio" name="radio_btn" id="radio_3">
+            <input type="radio" name="radio_btn" id="radio_4">
 
-         <div class="content__bottom">
-            <div class="text__wrapper">
-               <p class="text text1">аллилуя</p>
-               <p class="text text2">когда увидел новые фичи</p>
-               <p class="text text3">нубик.</p>
-               <p class="text text4">мэн ит</p>
+            <div class="slider__img first-img"><img src="./img/dude.jpg" alt=""></div>
+            <div class="slider__img"><img src="./img/dude.jpg" alt=""></div>
+            <div class="slider__img"><img src="./img/dude.jpg" alt=""></div>
+            <div class="slider__img"><img src="./img/dude.jpg" alt=""></div>
+         </div>
+         <div class="slider__underbody">
+            <div class="slider__alltext">
+               <div class="slider__text-content">
+                  <div class="slider__text1 first-text">аллилуя</div>
+                  <div class="slider__text1">двач</div>
+                  <div class="slider__text1">ты кто?</div>
+                  <div class="slider__text1">энд...</div>
+               </div>
+
             </div>
-            <div class="navigation__button">
-               <label for="radio_1" class="label">
-                  <div class="auto-btn1 auto-btn"></div>
-               </label>
-               <label for="radio_2" class="label">
-                  <div class="auto-btn2 auto-btn"></div>
-               </label>
-               <label for="radio_3" class="label">
-                  <div class="auto-btn3 auto-btn"></div>
-               </label>
-               <label for="radio_4" class="label">
-                  <div class="auto-btn4 auto-btn"></div>
-               </label>
+            <div class="slider__navigation">
+               <label for="radio_1" class="bar"></label>
+               <label for="radio_2" class="bar"></label>
+               <label for="radio_3" class="bar"></label>
+               <label for="radio_4" class="bar"></label>
             </div>
          </div>
-
       </div>
    </div>
-
 </body>
 
 </html>
