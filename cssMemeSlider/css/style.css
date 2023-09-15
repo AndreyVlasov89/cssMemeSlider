@@ -14,12 +14,11 @@
    align-items: center;
    width: 400%;
    margin-bottom: 2rem;
-   /*gap: 1rem;*/
 }
 
-.slider__body>*:not(:last-child) {
+/*.slider__body>*:not(:last-child) {
    margin-right: 1rem;
-}
+}*/
 
 input {
    display: none;
@@ -29,16 +28,13 @@ input {
    display: flex;
    align-items: center;
    justify-content: center;
-   gap: 10%;
    width: 25%;
    max-width: 27%;
    transition: all .4s ease;
    
 }
 
-
 .slider__img img {
-   /*border-radius: 10px;*/
    max-width: 50rem;
    width: 100%;
    height: auto;
@@ -49,13 +45,12 @@ input {
 .slider__underbody {
    display: flex;
    align-items: center;
-   justify-content: center;
-   max-width: 70%;
-   /*margin-left: 10%;*/
+   justify-content:space-between;
+   max-width: 100%;
 }
 
 .slider__alltext {
-   width: 25%;
+   width: 50%;
    overflow: hidden;
 }
 
@@ -71,32 +66,37 @@ input {
    width: 25%;
    font-family: 'Mooli',sans-serif;;
    font-weight: 400;
-   font-size: 120%;
+   font-size: 160%;
    color: #fff;
-   
 }
 
 .slider__navigation {
-   width: 30%;
-   
+   width: 50%;
+   align-items: flex-end;
+   display: block;
 }
 
-.slider__navigation>*:not(:last-child) {
-   margin-right: .5rem;
+.slider__navigations>*:not(:last-child) {
+   margin-right: 1rem;
+}
+
+.slider__navigations {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
 }
 
 .bar {
    display: inline-block;
-   width: 1.3em;
-   height: 1.3em;
-   border: 3px solid #fff;
+   width: 1.3rem;
+   height: 1.3rem;
+   border: .2rem solid #fff;
    border-radius: 50%;
    background: #66ce66;
    transition: .4s;
    cursor: pointer;
 }
-
-
+ 
 
 .bar:hover {
    background: #66ce66;
@@ -144,3 +144,26 @@ input {
 
 
 
+@media (max-width: 900px) {
+   .bar {
+      width: 1rem;
+      height: 1rem;
+   }
+
+   .slider__navigations>*:not(:last-child) {
+      margin-right: .7rem;
+   }
+
+   .slider__text {
+      font-size: 100%;
+   }
+
+   .slider__underbody {
+      display: flex;
+      flex-direction: column-reverse;
+   }
+
+   .slider__navigations {
+      margin-bottom: 1rem;
+   }
+}
